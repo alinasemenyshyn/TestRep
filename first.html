@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>KeyFix - помічник набору тексту</title> 
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        background-color: #f0f2f5;
+    }
+
+    #main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .Header h1 {
+        text-align: center;
+        color: blueviolet;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .Header ul {
+        list-style-type: none;
+        display: flex; 
+        justify-content: center;
+        gap: 30px;
+        padding: 15px;
+        background: white;
+        border-radius: 50px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        position: sticky; 
+        top: 10px;
+    }
+
+    .AboutProduct { 
+        background: white;
+        padding: 30px;
+        margin-top: 30px;
+        border-left: 5px solid blueviolet;
+        z-index: 1000;
+    }
+
+    .ReviewProduct img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 12px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .Header ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .AboutProduct {
+            margin: 10px;
+            padding: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .AboutProduct {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+</style>
+</head> 
+
+<body> 
+
+<div id="main-container">
+    <div class="Header" style="margin-bottom: 40px;">
+        <h1>KeyFix - помічник набору тексту</h1>
+        <ul>
+            <li><a href="#">Про продукт</a></li>
+            <li><a href="#">Огляд програми</a></li>
+            <li><a href="#">Завантаження</a></li>
+        </ul>
+    </div>
+
+    <div class="AboutProduct">
+        <div>
+            <p><b>KeyFix</b> - це інноваційний кросплатформний застосунок для виправлення розкладки.</p> 
+            <h2>Основні переваги --> </h2>
+        </div>
+        <ol>
+            <li>Кросплатформений застосунок <i>(Windows, macOS, Linux)</i></li>
+            <li>Миттєва конвертація тексту</li>
+            <li>Робота у фоновому режимі</li>
+            <li>Гнучке налаштування гарячих клавіш</li>
+            <li>Змінні теми інтерфейсу</li>
+            <li>Повністю автономна робота</li>
+            <li>AI-чат технічної підтримки</li>
+        </ol>
+    </div>
+
+    <div class="ReviewProduct">
+        <h2 style="text-align: center;">Інтерфейс продукту</h2>
+        <img src="data/GUI.png" alt="Інтерфейс додатку">
+    </div>
+
+    <div class="DownloadApp" style="text-align: center; padding: 50px;">
+        <h2>Завантажити програму</h2>
+        <a href="https://drive.google.com/file/d/1EgFcjaHW2L0AcVM8K3FRQln7WOGpRgd0/view?usp=sharing">Натисніть тут для завантаження</a>
+    </div>
+    
+    <table style="width:100%">
+      <tr>
+        <th>App Name</th>
+        <th>Author</th>
+        <th colspan="2">Size</th>
+        <th>Preview year
+      </tr>
+      <tr>
+        <td>KeyFix</td>
+        <td>alliiinss</td>
+        <td>28Mb</td>
+        <td>0.028Gb</td>
+        <td>2026</td>   
+      </tr>
+      <tr>
+        <td>Zoom</td>
+        <td>Еріком Юанем</td>
+        <td>4000Mb</td>
+        <td>4Gb</td>
+        <td>2013</td>
+      </tr>
+    </table>
+
+    
+</div>
+
+</body> 
+</html>
